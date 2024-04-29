@@ -71,7 +71,7 @@ namespace HelixToolkit.Wpf.SharpDX
         {
             var delta = e - this.LastPoint;
             this.LastPoint = e;
-            this.Zoom(delta.Y * 0.01, this.zoomPoint3D);
+            this.Zoom((delta.Y + delta.X) * 0.01, this.zoomPoint3D);
         }
 
         /// <summary>
