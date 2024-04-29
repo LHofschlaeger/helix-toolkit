@@ -46,7 +46,7 @@ namespace HelixToolkit.SharpDX.Core.Controls
         {
             var delta = e - LastPoint;
             LastPoint = e;
-            Zoom(delta.Y * 0.01f, zoomPoint3D);
+            Zoom(delta.X * 0.01f, zoomPoint3D);
         }
 
         /// <summary>
